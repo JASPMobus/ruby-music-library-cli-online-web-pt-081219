@@ -1,3 +1,3 @@
 class MusicLibraryController
-  attr_accessor :path
+  attr_reader :path
 end
