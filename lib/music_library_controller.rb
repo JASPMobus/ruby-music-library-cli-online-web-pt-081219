@@ -33,6 +33,8 @@ class MusicLibraryController
         list_artists
       elsif ask == "list genres"
         list_genres
+      elsif ask == "list artist"
+        list_songs_by_artist
       end
     end 
   end
