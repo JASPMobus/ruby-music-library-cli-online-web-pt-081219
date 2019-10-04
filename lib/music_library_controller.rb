@@ -62,7 +62,7 @@ class MusicLibraryController
   end 
   
   def list_songs_by_artist()
-    puts "Which artist?"
+    puts "Please enter the name of an artist"
     artist_no = gets
   end
 end
