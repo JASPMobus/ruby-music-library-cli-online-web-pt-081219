@@ -41,4 +41,5 @@ class MusicLibraryController
     Artist.all.each_with_index do |artist, index|
       puts "#{index+1}. #{artist.name}"
     end
+  end 
 end
