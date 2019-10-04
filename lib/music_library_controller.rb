@@ -47,7 +47,7 @@ class MusicLibraryController
     alphabetized = Song.all.sort { |song1, song2| song1.name <=> song2.name }
       alphabetized = alphabetized.uniq
     
-    alphabetized.uniq.each_with_index do |song, index| 
+    alphabetized.each_with_index do |song, index| 
       puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end 
   end
