@@ -66,5 +66,7 @@ class Song
     
     song = Song.find_or_create_by_name(name)
     song.artist=(artist)
+    
+    song
   end
 end
