@@ -61,6 +61,8 @@ class MusicLibraryController
     end
   end 
   
-  def list_artist(number)
+  def list_songs_by_artist()
+    puts "Which artist?"
+    artist_no = gets
   end
 end
