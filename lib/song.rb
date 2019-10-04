@@ -11,6 +11,12 @@ class Song
     else
       @artist = artist
     end
+    
+    if genre
+      self.genre=(genre)
+    else
+      @genre = genre 
+    end
   end
   
   def self.all
