@@ -63,7 +63,7 @@ class Song
     song = self.find_by_name(name)
     
     if !song 
-      Song.new(name)
+      Song.create(name)
     else
       song 
     end
