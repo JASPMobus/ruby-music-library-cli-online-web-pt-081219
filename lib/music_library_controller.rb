@@ -93,7 +93,7 @@ class MusicLibraryController
   
   def play_song
     puts "Which song number would you like to play?"
-    song_number = gets
+    song_number = gets.to_i
     
     if 1 <= song_number && song_number.to_i <= Song.all.uniq.length
     end
