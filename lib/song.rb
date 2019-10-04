@@ -9,7 +9,7 @@ class Song
     @@all << self
   end
   
-  def all
+  def selfall
     @@all
   end
 end
