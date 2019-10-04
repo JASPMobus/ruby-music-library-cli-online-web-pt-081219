@@ -15,7 +15,11 @@ class MusicLibraryController
     ask = ""
     
     while true do 
+      ask = gets
       
+      if ask == "exit"
+        exit! 
+      end
     end 
   end
 end
