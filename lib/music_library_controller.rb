@@ -18,7 +18,7 @@ class MusicLibraryController
       ask = gets
       
       if ask == "exit"
-        exit! 
+        exit
       end
     end 
   end
