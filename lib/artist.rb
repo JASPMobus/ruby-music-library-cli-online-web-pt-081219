@@ -35,4 +35,7 @@ class Artist
       @songs << song
     end
   end
+  
+  def genres
+    genres = @songs.map { |song| song.genre } 
 end
