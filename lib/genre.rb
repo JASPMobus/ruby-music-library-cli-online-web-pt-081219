@@ -15,6 +15,10 @@ class Genre
     @@all.clear
   end
   
+  def save
+    @@all << self
+  end
+  
   def self.create(name)
     genre = Genre.new(name)
     
