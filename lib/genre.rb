@@ -11,7 +11,7 @@ class Genre
     @@all
   end
   
-  def selfdestroy_all
+  def self.destroy_all
     @@all.clear
   end
   
