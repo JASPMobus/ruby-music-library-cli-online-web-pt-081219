@@ -59,7 +59,7 @@ class Song
     genre.add_song(self)
   end
 
-  def self.new_by_filename(filename)
+  def self.new_from_filename(filename)
     # artist - title - genre.mp3
     title = filename.split(" - ")[1]
     
