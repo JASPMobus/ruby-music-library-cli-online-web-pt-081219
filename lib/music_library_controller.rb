@@ -14,7 +14,7 @@ class MusicLibraryController
     
     ask = ""
     
-    while true do 
+    until ask == "exit" do 
       ask = gets
       
       if ask == "exit"
