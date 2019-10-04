@@ -98,7 +98,7 @@ class MusicLibraryController
     if 1 <= song_number && song_number <= Song.all.uniq.length
       alphabetized = Song.all.sort { |song1, song2| song1.name <=> song2.name }
     
-      song = alphabetized.uniq[song_number]
+      song = alphabetized.uniq[song_number+1]
     
       puts "Playing #{song.name} by #{song.artist.name}"
     end
