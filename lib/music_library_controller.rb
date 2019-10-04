@@ -55,5 +55,5 @@ class MusicLibraryController
     end
   end 
   
-  def list_artist(numberr)
+  def list_artist(number)
 end
