@@ -7,9 +7,11 @@ class MusicImporter
 
   def files
     files = []
+    
     Dir.new(path).each do |file|
       files << file if file.end_with?('.mp3')
     end
+    
     files
   end
 
