@@ -8,7 +8,7 @@ module Concerns
       instance = self.find_by_name(name)
       
       if !instance
-        Song.create(name)
+        self.create(name)
       else
         song 
       end
