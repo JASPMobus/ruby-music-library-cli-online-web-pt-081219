@@ -27,4 +27,12 @@ class Song
     
     song
   end
+  
+  def set_artist(artist)
+    @artist = artist
+  end
+  
+  def artist=(artist)
+    artist.add_song(self)
+  end
 end
