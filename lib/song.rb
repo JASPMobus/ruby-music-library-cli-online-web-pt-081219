@@ -67,7 +67,7 @@ class Song
     genre = Genre.find_or_create_by_name(file_name_split[2].split(".")[0])
     
     artist.add_song(song)
-    genre.add_song(genre)
+    genre.add_song(song)
     
     song
   end
