@@ -63,6 +63,7 @@ class Song
     # artist - title - genre.mp3
     artist = filename.split(" - ")[0]
     track = filename.split(" - ")[1]
+    
     song = Song.new(track)
     song.artist_name = artist
     song
