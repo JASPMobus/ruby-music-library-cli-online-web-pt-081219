@@ -95,6 +95,8 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_number = gets
     
+    if 1 <= song_number <= Song.all.uniq.length
+    
     alphabetized = Song.all.sort { |song1, song2| song1.name <=> song2.name }
     
     song = alphabetized.uniq[song_number.to_i + 1]
