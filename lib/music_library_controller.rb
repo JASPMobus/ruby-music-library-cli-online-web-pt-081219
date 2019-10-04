@@ -99,6 +99,8 @@ class MusicLibraryController
     
     song = alphabetized[song_number.to_i + 1]
     
-    puts "Playing #{song.name} by #{song.artist.name}"
+    if song
+      puts "Playing #{song.name} by #{song.artist.name}"
+    end
   end
 end
