@@ -99,7 +99,7 @@ class MusicLibraryController
       alphabetized = Song.all.sort { |song1, song2| song1.name <=> song2.name }
       alphabetized = alphabetized.uniq
     
-      song = alphabetized.uniq[song_number+1]
+      song = alphabetized[song_number+1]
     
       puts "Playing #{song.name} by #{song.artist.name}"
     end
