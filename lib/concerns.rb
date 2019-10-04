@@ -10,7 +10,7 @@ module Concerns
       if !instance
         self.create(name)
       else
-        song 
+        instance
       end
     end
   end
