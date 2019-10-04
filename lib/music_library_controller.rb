@@ -95,6 +95,6 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_number = gets
     
-    
+    alphabetized = Song.all.sort { |song1, song2| song1.name <=> song2.name }
   end
 end
