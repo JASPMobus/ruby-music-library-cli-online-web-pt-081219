@@ -63,6 +63,9 @@ class MusicLibraryController
   
   def list_songs_by_artist()
     puts "Please enter the name of an artist:"
-    artist = gets
+    artist_name = gets
+    artist = Artist.find_or_create_by_name(artist_name)
+    
+    songs = artist.songs.sort { |song1, song2| song1.name <=> song2.name }
   end
 end
