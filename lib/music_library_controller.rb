@@ -96,6 +96,7 @@ class MusicLibraryController
     song_number = gets
     
     if 1 <= song_number <= Song.all.uniq.length
+    end
     
     alphabetized = Song.all.sort { |song1, song2| song1.name <=> song2.name }
     
