@@ -5,7 +5,7 @@ module Concerns
     end
     
     def find_or_create_by_name(name)
-      instance = self.find_by_name(name)
+      instance = ind_by_name(name)
       
       if !instance
         self.create(name)
