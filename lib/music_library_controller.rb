@@ -8,4 +8,7 @@ class MusicLibraryController
     
     music_importer.import
   end
+  
+  def call
+  end
 end
