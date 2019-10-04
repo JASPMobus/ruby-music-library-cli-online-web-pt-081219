@@ -97,6 +97,6 @@ class MusicLibraryController
     
     alphabetized = Song.all.sort { |song1, song2| song1.name <=> song2.name }
     
-    song = alphabetized[song_number + 1]
+    song = alphabetized[song_number.to_i + 1]
   end
 end
