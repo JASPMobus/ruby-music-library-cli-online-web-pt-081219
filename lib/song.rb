@@ -65,4 +65,5 @@ class Song
     if !song 
       Song.new(name)
     end
+  end
 end
