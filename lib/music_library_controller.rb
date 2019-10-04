@@ -6,6 +6,6 @@ class MusicLibraryController
     
     music_importer = MusicImporter.new(path)
     
-    music_importer.import(path)
+    music_importer.import
   end
 end
