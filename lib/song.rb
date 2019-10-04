@@ -65,7 +65,6 @@ class Song
     title = filename.split(" - ")[1]
     
     song = Song.create(title)
-    song.artist_name = artist
     
     song
   end
