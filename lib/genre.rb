@@ -14,4 +14,12 @@ class Genre
   def destroy_all
     @@all.clear
   end
+  
+  def self.create(name)
+    genre = Genre.new(name)
+    
+    genre.save
+    
+    genre
+  end
 end
