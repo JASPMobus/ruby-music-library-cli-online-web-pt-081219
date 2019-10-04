@@ -27,6 +27,12 @@ class MusicLibraryController
       
       if ask == "exit"
         
+      elsif ask == "list songs"
+        list_songs
+      elsif ask == "list artists"
+        list_artists
+      elsif ask == "list genres"
+        list_genres
       end
     end 
   end
