@@ -40,4 +40,5 @@ class Artist
     genres = @songs.map { |song| song.genre }
     
     genres.uniq
+  end
 end
